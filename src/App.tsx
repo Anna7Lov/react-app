@@ -1,26 +1,26 @@
+import { type } from 'os';
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Footer } from './Footer';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const admin = {adminName: 'Anna'}
+const user = {userFirstName: 'Иван',
+userShortBiography: 'Биография - описание жизни человека, сделанное другими людьми или им самим (автобиография). Биография является источником первичной социологической информации, позволяющей выявить психологический тип личности в его исторической, национальной и социальной обусловленности.',
+userTel: '+380501111111'
 }
+
+
+const App = () => (
+<div className="App">   
+    <h1>Hello World {admin.adminName}</h1> 
+    <h2>User Info</h2>
+    <div>
+    <p>{user.userFirstName}</p>
+    <p>{user.userShortBiography}</p>
+    <a href="+380501111111">{user.userTel}</a>    
+    </div>
+    <Footer copyright='C'/> 
+    </div>
+)
 
 export default App;

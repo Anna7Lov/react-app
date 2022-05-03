@@ -7,6 +7,18 @@
   pointer-events: none;
 }
 
+h1 {
+  color: rgb(7, 20, 139);
+}
+
+h2 {
+  color: red;
+}
+
+div {
+  margin-bottom: 30px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
